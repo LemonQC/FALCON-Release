@@ -7,6 +7,13 @@ REMOTE=https://people.csail.mit.edu/jerrymei/projects/falcon
 #echo "Downloading data from ${URL}"
 #curl ${URL} | tar -zx -C ${DATASET}/.augmented/CLEVR_v1.0/0/${NAME}/questions.json
 
+#NAME="clevr_concept_support"
+#URL="${REMOTE}/assets/${NAME}.json"
+#mkdir -p ${DATASET}/.augmented/CLEVR_v1.0/0/${NAME}
+#echo "Downloading data from ${URL}"
+#curl ${URL} | tar -zx -C ${DATASET}/.augmented/CLEVR_v1.0/0/${NAME}/questions.json
+
+
 NAME="clevr_fewshot"
 URL="${REMOTE}/assets/${NAME}.json"
 mkdir -p ${DATASET}/.augmented/CLEVR_v1.0/0/${NAME}
